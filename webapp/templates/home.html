@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+
+	<div class="main-div text-center">
+		<div class="container state_div">
+			<div class="header">
+				<p class="choose_label">Choose your State:</p>
+			</div>
+
+			<div class="row">
+				<h5 id="error_header"></h5>
+			</div>
+
+			<div class="row">
+				<div class="select_body">
+					<select class="custom-select" id="state_select" onchange="updateConstituencies()">
+				  		<option selected>State</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container state_div">
+			<div class="header">
+				<p class="choose_label">Choose your Constituency:</p>
+			</div>
+
+			<div class="row">
+				<div class="select_body">
+					<select class="custom-select" id="constituencies_select">
+				  		<option selected>Constituency</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-div text-center">
+      <button class="next-button" onclick="submitDetails()">Next &#8594;</button>
+    </div>
+
+<script src="/static/js/home.js"></script>
+
+{% endblock %}

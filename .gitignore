@@ -1,0 +1,6 @@
+db.sqlite3
+webapp/migrations/*.py
+webapp/migrations/*.pyc
+env/
+webapp/__py_cache__
+yournetaEnv

@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <div class="main-div">
+
+    <div class="container text-center" id="mp_loading">
+      <h3>Getting Info ...</h3>
+    </div>
+
+    <div class="container cause_div col-lg-12 col-md-12 col-sm-12" id="mp_info">
+      <div class="header text-center">
+        <p class="choose_label">Your current MP is: </p>
+      </div>
+
+      <div class="container text-center">
+        <img id="mp_img" class="mp_img">
+        <strong><span class="mp_name" id="name"></span></strong>
+      </div>
+
+
+
+      <div class="mp_category_container">
+
+        <h6 class="mp_info_text">Your MP has tweeted positively about the following causes recently!</h6>
+
+        <div class="container">
+          <div class="row">
+            <div class="col mp-col">
+              <div class="col-xs" id="checkbox_div0">
+              </div>
+            </div>
+
+            <div class="col mp-col">
+              <div class="col-xs" id="checkbox_div1">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col mp-col">
+              <div class="col-xs" id="checkbox_div2">
+               
+              </div>
+            </div>
+
+            <div class="col mp-col">
+              <div class="col-xs" id="checkbox_div3">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col mp-col">
+              <div class="col-xs" id="checkbox_div4">
+               
+              </div>
+            </div>
+
+            <div class="col mp-col">
+              <div class="col-xs" id="checkbox_div5">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col mp-col">
+              <div class="col-xs" id="checkbox_div6">
+                
+              </div>
+            </div>
+
+            <div class="col mp-col">
+              <div class="col-xs" id="checkbox_div7">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col mp-col">
+              <div class="col-xs" id="checkbox_div8">
+                
+              </div>
+            </div>
+
+            <div class="col mp-col">
+              <div class="col-xs" id="checkbox_div9">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div id="mp_no_info" class="text-center">
+      <h4>Sorry, No Info Available</h4>
+
+      <a href="/"><button type="button" class="btn btn-info">Try another constituency?</button></a>
+    </div>
+
+
+  </div>
+
+
+
+
+<script src="/static/js/mp.js"></script>
+
+
+{% endblock %}

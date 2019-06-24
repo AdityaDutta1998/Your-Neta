@@ -1,0 +1,184 @@
+input[type="checkbox"] {
+  visibility: hidden;
+}
+label {
+  cursor: pointer;
+}
+input[type="checkbox"] + label:before {
+  border: 1px solid #000000;
+  border-radius: 3px;
+  content: "\00a0";
+  display: inline-block;
+  font: 16px/1em sans-serif;
+  height: 16px;
+  margin: 0 .25em 0 0;
+  padding: 0;
+  vertical-align: top;
+  width: 16px;
+}
+input[type="checkbox"]:checked + label:before {
+  background: #FF8C00;
+  border: none;
+  color: #fff;
+  content: "\2713";
+  text-align: center;
+}
+input[type="checkbox"]:checked + label:after {
+  font-weight: bold;
+}
+
+.label:after{
+  margin-left: 10px;
+}
+.navbar{
+    background: #ff8c00;
+    height: 50px;
+}
+
+
+.mp_info_text{
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+
+#mp_no_info{
+  display: none;
+  padding: 20px;
+}
+
+#mp_info{
+  display: none;
+}
+
+#mp_no_info a{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+#error_header{
+  color: red;
+  width: 100%;
+  display: none;
+}
+
+.row .col .col-xs{
+    text-align: left;
+}
+
+.interest-col + .interest-col{
+    margin-left: 30px;
+}
+
+.container + .container{
+    margin-top: 40px;
+}
+
+.state_div, .constituency_div{
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+.cause_div{
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.choose_label{
+	   color: #000000;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 500;
+
+}
+
+.custom-select{
+
+    background: #FF8C00;
+    color: white;
+    font-size: 18px;
+    min-height: 50px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+}
+
+
+.interest_label{
+    margin-left: 6px;
+}
+
+.mp_category_container{
+    text-align: center;
+    margin: 10px;
+}
+
+.mp_img{
+    display: block;
+    margin: auto;
+    max-width: 500px;
+}
+
+.mp_name{
+    display: block;
+    margin: auto;
+}
+
+
+.select_body{
+    margin: auto;
+    width: 75%;
+}
+
+.custom-select option{
+	background: white;
+  color: grey;
+}
+
+.main-div{
+	min-height: 75vh;
+}
+
+.container  {
+    margin-left: 0 !important;
+    margin-right: 0;
+    font-size: 12px;
+		display:inline-block;
+    padding: 0 10 0 0px;
+}
+
+.col{
+	  padding-right: 10px;
+}
+
+.center {
+    display: block;
+    margin-left: 50%;
+    margin-right: 50%;
+		@media only screen and (max-width: 480px) {
+     p  {
+            font-size: 0.8em / 16px
+        }
+}
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.next-button{
+	border: none;
+	text-transform: uppercase;
+	font-size: 24px;
+	color: #000000;
+	background: transparent;
+	outline: transparent;
+    font-weight: 600;
+}
+
+body{
+    background-image: url("../images/background.png");
+}

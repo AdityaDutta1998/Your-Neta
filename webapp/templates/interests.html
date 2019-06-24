@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+  <div class="main-div">
+    <div class="container cause_div col-lg-12 col-md-12 col-sm-12">
+      <div class="header text-center" >
+        <p class="choose_label">Select your causes</p>
+      </div>
+
+      <div class="header text-center" id="error_header"> </div>
+
+
+      <div class="mp_category_container">
+
+        <div class="container">
+          <div class="row">
+            <div class="col interest-col">
+              <div class="col-xs">
+                <input type="checkbox" id="int_emp" name="int_emp">
+                <label for="int_emp">Employment</label>
+              </div>
+            </div>
+
+            <div class="col interest-col">
+              <div class="col-xs">
+                <input type="checkbox" id="int_health" name="int_health">
+                <label for="int_health">Health</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col interest-col">
+              <div class="col-xs">
+                <input type="checkbox" id="int_infra" name="int_infra">
+                <label for="int_infra">Infrastructure</label>
+              </div>
+            </div>
+
+            <div class="col interest-col">
+              <div class="col-xs">
+                <input type="checkbox" id="int_safety" name="int_safety">
+                <label for="int_safety">Safety</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col interest-col">
+              <div class="col-xs">
+                <input type="checkbox" id="int_edu" name="int_edu">
+                <label for="int_edu">Education</label>
+              </div>
+            </div>
+
+            <div class="col interest-col">
+              <div class="col-xs">
+                <input type="checkbox" id="int_rel" name="int_rel">
+                <label for="int_rel">Religion</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col interest-col">
+              <div class="col-xs">
+                <input type="checkbox" id="int_agri" name="int_agri">
+                <label for="int_agri">Agriculture</label>
+              </div>
+            </div>
+
+            <div class="col interest-col">
+              <div class="col-xs">
+                <input type="checkbox" id="int_dev" name="int_dev">
+                <label for="int_dev">Development</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col interest-col">
+              <div class="col-xs">
+                <input type="checkbox" id="int_trans" name="int_trans">
+                <label for="int_trans">Transportation</label>
+              </div>
+            </div>
+
+            <div class="col interest-col">
+              <div class="col-xs">
+                <input type="checkbox" id="int_corr" name="int_corr">
+                <label for="int_corr">Corruption</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      </div>
+
+      </div>
+
+    <div class="footer-div text-center">
+      <button class="next-button" id = "next" onclick="validate()">Next &#8594;</button>
+    </div>
+
+<script src="/static/js/interests.js"></script>
+
+{% endblock %}
